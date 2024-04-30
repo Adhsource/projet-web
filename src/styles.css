@@ -1,0 +1,124 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+  }
+  
+  input, textarea, button {
+    padding: 8px;
+    margin: 5px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  button {
+    background-color: #0056b3;
+    color: white;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #004494;
+  }
+  
+  h1, h3 {
+    color: #333;
+  }
+  
+  .form-container {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+  }
+  
+  .login-form, .signup-form {
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin: 10px;
+    background-color: white;
+    border-radius: 8px;
+  }
+  
+  .messages-container {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .message-form {
+    width: 50%;
+    margin-bottom: 20px;
+  }
+  
+  .message-list {
+    width: 50%;
+    background-color: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    overflow-y: auto;
+    height: 400px;
+  }
+  
+  .message-item {
+    border-bottom: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  .logout-button {
+    padding: 8px 16px;
+    background-color: #d9534f; /* Rouge pour indiquer une action de déconnexion */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 20px; /* Ajout d'espace au-dessus du bouton */
+  }
+  
+  .logout-button:hover {
+    background-color: #c9302c; /* Un rouge plus foncé au survol */
+  }
+
+  /*user-profile*/
+
+  .user-profile-icon {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.user-photo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.user-name {
+  font-weight: bold;
+}
+
+/*UserProfilePage*/
+
+.profile-banner {
+  width: 100%;
+  height: 200px; /* Ajustez selon vos besoins */
+  background-color: #eee; /* Mettez une image si vous préférez */
+}
+
+.profile-photo-large {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-top: -50px; /* Ajustez selon la taille de votre bannière */
+  border: 3px solid white;
+}
+
+.user-messages {
+  margin-top: 20px;
+}
+
