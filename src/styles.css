@@ -83,42 +83,129 @@ body {
     background-color: #c9302c; /* Un rouge plus foncé au survol */
   }
 
-  /*user-profile*/
+input[type="text"] {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
 
-  .user-profile-icon {
-  display: flex;
-  align-items: center;
+button {
+  padding: 8px 16px;
+  background-color: #0056b3;
+  color: white;
+  border: none;
+  border-radius: 4px;
   cursor: pointer;
 }
 
-.user-photo {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  margin-right: 10px;
+button:hover {
+  background-color: #004494;
 }
 
-.user-name {
+/* PollComponent.css */
+.poll-container {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  margin: 20px auto;
+  width: 80%;
+  max-width: 600px;
+}
+
+.poll-question {
+  margin-bottom: 20px;
+  font-size: 1.5em;
   font-weight: bold;
+  color: #333;
 }
 
-/*UserProfilePage*/
+.poll-option {
+  margin: 10px 0;
+}
 
-.profile-banner {
+.poll-option button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.poll-option button:hover {
+  background-color: #0056b3;
+}
+
+.poll-results {
+  list-style-type: none;
+  padding: 0;
+}
+
+.poll-results li {
+  padding: 8px;
+  background-color: white;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+/* Styles pour PollCreator */
+.poll-creator-container {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  margin: 20px;
   width: 100%;
-  height: 200px; /* Ajustez selon vos besoins */
-  background-color: #eee; /* Mettez une image si vous préférez */
+  max-width: 500px;
 }
 
-.profile-photo-large {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  margin-top: -50px; /* Ajustez selon la taille de votre bannière */
-  border: 3px solid white;
+.poll-creator-title {
+  color: #333;
+  margin-bottom: 15px;
 }
 
-.user-messages {
-  margin-top: 20px;
+.poll-creator-input, .poll-creator-add-btn, .poll-creator-submit-btn {
+  padding: 8px 12px;
+  margin-right: 5px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
 }
+
+.poll-creator-add-btn, .poll-creator-submit-btn {
+  cursor: pointer;
+  background-color: #0056b3;
+  color: white;
+  border: none;
+}
+
+.poll-creator-add-btn:hover, .poll-creator-submit-btn:hover {
+  background-color: #00408a;
+}
+
+.poll-creator-options-list {
+  list-style: none;
+  padding-left: 0;
+  margin-top: 15px;
+}
+
+.poll-creator-option {
+  background-color: #e3e3e3;
+  padding: 5px;
+  margin-bottom: 5px;
+  border-radius: 4px;
+}
+
+/* Ajouts dans PollComponent.css */
+.poll-creator-question-input {
+  width: 100%;
+  padding: 8px 12px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 3px rgba(0,0,0,0.1);
+}
+
 

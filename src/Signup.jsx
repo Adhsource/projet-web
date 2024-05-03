@@ -7,6 +7,8 @@ function Signup({ onSignup }) {
   const [password, setPassword] = useState('');
   const [confirmPassword, setConfirmPassword] = useState('');
 
+  const getFirstName = (evt) => {setFirstName(evt.target.value)}
+
   const handleSubmit = (event) => {
     event.preventDefault();
     if (password !== confirmPassword) {
@@ -20,9 +22,7 @@ function Signup({ onSignup }) {
     <div className="signup-form">
       <form onSubmit={handleSubmit}>
         <h3>Sign Up</h3>
-        <label>
-          First Name:
-          <input type="text" value={firstName} onChange={(e) => setFirstName(e.target.value)} required />
+        <label hmtlFor="firstname">First Name:<input type="text" onChange={getFirstName} />
         </label>
         <label>
           Last Name:

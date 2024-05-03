@@ -1,3 +1,4 @@
+// Login.jsx
 import React, { useState } from 'react';
 
 function Login({ onLogin }) {
@@ -6,24 +7,33 @@ function Login({ onLogin }) {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    onLogin(email, password);
+    onLogin(email, password);  // Envoie l'email et le mot de passe au gestionnaire de connexion
+    setEmail('');
+    setPassword('');
   };
 
   return (
-    <div className="login-form">
-      <form onSubmit={handleSubmit}>
-        <h3>Login</h3>
-        <label>
-          Email:
-          <input type="email" value={email} onChange={(e) => setEmail(e.target.value)} required />
-        </label>
-        <label>
-          Password:
-          <input type="password" value={password} onChange={(e) => setPassword(e.target.value)} required />
-        </label>
-        <button type="submit">Login</button>
-      </form>
-    </div>
+    <form onSubmit={handleSubmit}>
+      <div>
+        <label>Email:</label>
+        <input
+          type="email"
+          value={email}
+          onChange={e => setEmail(e.target.value)}
+          required
+        />
+      </div>
+      <div>
+        <label>Password:</label>
+        <input
+          type="password"
+          value={password}
+          onChange={e => setPassword(e.target.value)}
+          required
+        />
+      </div>
+      <button type="submit">Login</button>
+    </form>
   );
 }
 
